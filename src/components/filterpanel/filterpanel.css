@@ -1,0 +1,192 @@
+.filter-panel {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 32px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  }
+  
+  .filter-section {
+    margin-bottom: 28px;
+  }
+  
+  .filter-section:last-child {
+    margin-bottom: 0;
+  }
+  
+  .filter-section h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 16px;
+  }
+  
+  .filter-section label {
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #475569;
+    margin-bottom: 8px;
+    gap: 10px;
+  }
+  
+  .filter-section select,
+  .filter-section input[type="number"] {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    font-size: 1rem;
+    color: #1e293b;
+    background: #ffffff;
+    transition: all 0.3s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%2364748b' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+  }
+  
+  .filter-section input[type="number"] {
+    background-image: none;
+  }
+  
+  .filter-section select:hover,
+  .filter-section input[type="number"]:hover {
+    border-color: #cbd5e1;
+  }
+  
+  .filter-section select:focus,
+  .filter-section input[type="number"]:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+    margin-top: 12px;
+  }
+  
+  .feature-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .feature-checkbox:hover {
+    background: #f8fafc;
+  }
+  
+  .feature-checkbox input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+  }
+  
+  .feature-checkbox input[type="checkbox"]:checked {
+    background: #3b82f6;
+    border-color: #3b82f6;
+  }
+  
+  .feature-checkbox input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .filter-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #e2e8f0;
+  }
+  
+  .reset-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 14px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #475569;
+    background: #f1f5f9;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .reset-button:hover {
+    background: #e2e8f0;
+    color: #1e293b;
+  }
+  
+  .apply-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 14px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #ffffff;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+  }
+  
+  .apply-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
+  }
+
+  @media (max-width: 768px) {
+  
+    .filter-panel {
+      padding: 24px;
+      border-radius: 20px;
+    }
+  
+    .features-grid {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 0px;
+    }
+    .filter-section select,
+    .filter-section input[type="number"] {
+      margin: 10px;
+      padding: 5px 12px;
+      font-size: 14px;
+    }
+    .filter-actions {
+      flex-direction: column;
+    }
+    .filter-section label{
+      display: flex;
+    }
+    .feature-checkbox{
+      padding: 0px;
+      gap: 5px;
+    }
+    .reset-button,
+    .apply-button {
+      width: 100%;
+      text-align: center;
+    }
+  }

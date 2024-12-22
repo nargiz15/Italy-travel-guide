@@ -1,0 +1,43 @@
+.header {
+    padding: 3rem 2rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #f6f8fc 0%, #ffffff 100%);
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #1a365d 0%, #2563eb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    color: #64748b;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .header {
+      padding: 2rem 1rem;
+      margin-bottom: 2rem;
+    }
+  
+    .header h1 {
+      font-size: 2rem;
+    }
+  
+    .header p {
+      font-size: 1rem;
+    }
+}
+  

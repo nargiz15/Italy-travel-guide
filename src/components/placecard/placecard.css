@@ -1,0 +1,193 @@
+.place-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    margin: 12px;
+    border: 1px solid #f1f5f9;
+  }
+  
+  .place-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .place-image-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .place-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .place-card:hover .place-image {
+    transform: scale(1.05);
+  }
+  
+  .price-tag {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.875rem;
+    background: white;
+  }
+  
+  .price-low {
+    color: #10b981;
+    background: #ecfdf5;
+  }
+  
+  .price-medium {
+    color: #3b82f6;
+    background: #eff6ff;
+  }
+  
+  .price-high {
+    color: #8b5cf6;
+    background: #f5f3ff;
+  }
+  
+  .price-luxury {
+    color: #ef4444;
+    background: #fef2f2;
+  }
+  
+  .city-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: white;
+    color: #334155;
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+  
+  .place-content {
+    padding: 16px;
+  }
+  
+  .place-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .place-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #334155;
+    margin: 0;
+  }
+  
+  .rating-badge {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: #fef3c7;
+    color: #92400e;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+  
+  .star-icon {
+    color: #f59e0b;
+  }
+  
+  .place-description {
+    color: #64748b;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin: 8px 0;
+    display: -webkit-box;
+  
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .opening-hours {
+    margin-top: 12px;
+    padding: 12px;
+    background: #f8fafc;
+    border-radius: 12px;
+  }
+  
+  .opening-hours h4 {
+    font-size: 0.875rem;
+    margin-bottom: 8px;
+    color: #334155;
+    font-weight: 600;
+  }
+  
+  .opening-hours ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 4px;
+  }
+  
+  .opening-hours li {
+    font-size: 0.813rem;
+    color: #64748b;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+  }
+  
+  .opening-hours li strong {
+    font-weight: 500;
+    color: #334155;
+  }
+  
+  .features-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+  }
+  
+  .feature-tag {
+    background: #f1f5f9;
+    color: #475569;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  
+  .feature-tag:hover {
+    background: #e2e8f0;
+  }
+  
+  @media (max-width: 768px) {
+    .place-card {
+      margin: 8px;
+    }
+  
+    .place-image-container {
+      height: 180px;
+    }
+  
+    .place-content {
+      padding: 12px;
+    }
+  
+    .place-title {
+      font-size: 1rem;
+    }
+  }
