@@ -1,5 +1,5 @@
 import React from 'react';
-import './SearchBar.css';
+import './searchbar.css';
 
 const SearchBar = ({ value, onChange }) => (
   <div className="search-container">
